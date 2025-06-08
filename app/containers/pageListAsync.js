@@ -23,10 +23,6 @@ export const Dashboard = loadable(() => import('./Dashboard'), {
 export const Users = loadable(() => import('./Users'), {
   fallback: <Loading />,
 });
-//User Page
-export const UserDetails = loadable(() => import('./UserDetails'), {
-  fallback: <Loading />,
-});
 
 // Static Pages
 export const NotFound = loadable(() => import('./NotFound'), {

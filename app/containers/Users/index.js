@@ -3,11 +3,9 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { Loading, TablePagination } from '@/components';
 import CreateUserModal from '@/components/Modal/CreateUserModal';
 import { getReq } from '@/utils/apiHandlers';
-import { useNavigate } from 'react-router-dom';
 
 const Users = () => {
   const [openCreateUserModal, setOpenCreateUserModal] = useState(false);
-  const navigate = useNavigate();
   const [users, setUsers] = useState({});
   const [loading, setLoading] = useState(false);
   const [page, setPage] = useState(1);
@@ -81,7 +79,6 @@ const Users = () => {
                       return (
                         <tr
                           key={index}
-                          onClick={() => navigate(`/user-detail/${item._id}`)}
                           className="font-poppins cursor-pointer text-14 text-black  h-[45px] hover:bg-[#ABD5FF42]"
                         >
                           <td>#{serial}</td>

@@ -452,3 +452,19 @@ input[type='number'] {
   background-position: center; /* optional: adjust to your layout */
 }
 
+.chatBg::-webkit-scrollbar {
+  width: 2px;
+  height: 10px;
+}
+
+/* Track */
+.chatBg::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.chatBg::-webkit-scrollbar-thumb {
+  background: rgba(253, 222, 173, 1);
+  border-radius: 10px;
+}
